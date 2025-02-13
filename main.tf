@@ -1,16 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
-
 # Create a VPC for Shark Conservation Blog
 resource "aws_vpc" "shark_conservation_vpc" {
   cidr_block           = "10.0.0.0/16"
