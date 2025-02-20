@@ -57,5 +57,5 @@ resource "aws_autoscaling_policy" "dev_policy" {
     }
       target_value                  = 70.0
   }
-  autoscaling_group_name            = sharkconservation-autoscaling-group
+  autoscaling_group_name            = autoscaling_group_name = aws_autoscaling_group.dev-AutoScalingGroup.name
 }
